@@ -1,0 +1,29 @@
+<div class="container" style="margin-right: -151px;">
+    <div class="col-md-offset  col-md-6">
+      <form #myFrm="ngForm">
+        <h3>Register Here</h3>
+        <div class="form-group">
+          userName:<input type="text" name="userName" class="form-control" #userName='ngModel'
+            [(ngModel)]='user.userName' required />
+        </div>
+        <div class="form-group">
+          emailID:<input type="text" name="emailID" class="form-control" #emailID='ngModel' [(ngModel)]='user.emailID'
+            required />
+        </div>
+        <div class="form-group">
+          phoneNo:<input type="text" name="phoneNo" class="form-control" #phoneNo='ngModel' [(ngModel)]='user.phoneNo'
+            required />
+        </div>
+        <div class="form-group">
+          city:<input type="text" class="form-control" name="city" #city='ngModel' [(ngModel)]='user.city' required />
+        </div>
+        <div class="form-group">
+          designation:<input type="text" class="form-control" name="designation" #designation='ngModel'
+            [(ngModel)]='user.designation' required />
+        </div>
+        <div class="form-group" align="center">
+          <button (click)="btnsubmit(myFrm)">Register</button>
+        </div>
+      </form>
+    </div>
+  </div>
